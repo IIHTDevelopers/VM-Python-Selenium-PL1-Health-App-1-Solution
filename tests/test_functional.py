@@ -59,15 +59,15 @@ def test_verification_module(setup_driver):
         if (testResult==True and isTestVerified==True):
             passed = True
             test_obj.yakshaAssert("test_verification_module", True, "Functional")
-            print("TestValidLogin = Passed")
+            print("test_verification_module = Passed")
         else:
             passed = False
             test_obj.yakshaAssert("test_verification_module", False, "Functional")
-            print("TestValidLogin = Failed")
+            print("test_verification_module = Failed")
     except:
         passed = False
         test_obj.yakshaAssert("test_verification_module", False, "test_verification_module")
-        print("TestValidLogin = Failed")
+        print("test_verification_module = Failed")
     assert passed
 
 @pytest.mark.order(2)
@@ -89,7 +89,7 @@ def test_verify_print_receipt(setup_driver):
             print("test_verify_print_receipt = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test2", False, "Functional")
+        test_obj.yakshaAssert("test_verify_print_receipt", False, "Functional")
         print("test_verify_print_receipt = Failed")
     assert passed
 
