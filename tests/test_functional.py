@@ -58,15 +58,15 @@ def test_verification_module(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/Pharmacy/Order/GoodsReceiptList")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test1", True, "HealthApp")
+            test_obj.yakshaAssert("test_verification_module", True, "Functional")
             print("TestValidLogin = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test1", False, "HealthApp")
+            test_obj.yakshaAssert("test_verification_module", False, "Functional")
             print("TestValidLogin = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test1", False, "HealthApp")
+        test_obj.yakshaAssert("test_verification_module", False, "test_verification_module")
         print("TestValidLogin = Failed")
     assert passed
 
@@ -81,16 +81,16 @@ def test_verify_print_receipt(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/Pharmacy/Order/GoodsReceiptList")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test2", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_verify_print_receipt", True, "Functional")
+            print("test_verify_print_receipt = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test2", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_verify_print_receipt", False, "Functional")
+            print("test_verify_print_receipt = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test2", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("Test2", False, "Functional")
+        print("test_verify_print_receipt = Failed")
     assert passed
 
 @pytest.mark.order(3)
@@ -104,16 +104,16 @@ def test_keyword_matching(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/Medical-records/OutpatientList")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test3", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_keyword_matching", True, "Functional")
+            print("test_keyword_matching = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test3", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_keyword_matching", False, "Functional")
+            print("test_keyword_matching = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test3", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_keyword_matching", False, "Functional")
+        print("test_keyword_matching = Failed")
     assert passed
 
 @pytest.mark.order(4)
@@ -127,16 +127,16 @@ def test_presence_of_doctor_filter(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/Medical-records/OutpatientList")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test4", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_presence_of_doctor_filter", True, "Functional")
+            print("test_presence_of_doctor_filter = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test4", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_presence_of_doctor_filter", False, "Functional")
+            print("test_presence_of_doctor_filter = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test4", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_presence_of_doctor_filter", False, "Functional")
+        print("test_presence_of_doctor_filter = Failed")
     assert passed
 
 @pytest.mark.order(5)
@@ -150,16 +150,16 @@ def test_verify_dynamic_templates(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/Settings/DynamicTemplates/Templates")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test5", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_verify_dynamic_templates", True, "Functional")
+            print("test_verify_dynamic_templates = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test5", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_verify_dynamic_templates", False, "Functional")
+            print("test_verify_dynamic_template = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test5", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_verify_dynamic_templates", False, "Functional")
+        print("test_verify_dynamic_templates = Failed")
     assert passed
 
 @pytest.mark.order(6)
@@ -173,16 +173,16 @@ def test_create_inventory_requisition(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/WardSupply/Inventory/InventoryRequisitionItem")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test6", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_create_inventory_requisition", True, "Functional")
+            print("est_create_inventory_requisition = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test6", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_create_inventory_requisition", False, "Functional")
+            print("test_create_inventory_requisition = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test6", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_create_inventory_requisition", False, "Functional")
+        print("test_create_inventory_requisition = Failed")
     assert passed
 
 @pytest.mark.order(7)
@@ -196,16 +196,16 @@ def test_verify_maternity_allowance_report(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/Maternity/Reports/MaternityAllowance")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test7", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_verify_maternity_allowance_report", True, "Functional")
+            print("test_verify_maternity_allowance_report = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test7", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_verify_maternity_allowance_report", False, "Functional")
+            print("test_verify_maternity_allowance_report= Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test7", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_verify_maternity_allowance_report", False, "Functional")
+        print("test_verify_maternity_allowance_report= Failed")
     assert passed
 
 @pytest.mark.order(8)
@@ -219,16 +219,16 @@ def test_perform_inpatient_imaging_order(setup_driver):
         isTestVerified = verify_active_order_is_present(driver)
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test8", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_perform_inpatient_imaging_order", True, "Functional")
+            print("test_perform_inpatient_imaging_order = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test8", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_perform_inpatient_imaging_order", False, "Functional")
+            print("test_perform_inpatient_imaging_order = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test8", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_perform_inpatient_imaging_order", False, "Functional")
+        print("test_perform_inpatient_imaging_order = Failed")
     assert passed
 
 @pytest.mark.order(9)
@@ -242,16 +242,16 @@ def test_verify_data_within_last_three_months(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/Radiology/ImagingRequisitionList")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test9", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_verify_data_within_last_three_months", True, "Functional")
+            print("test_verify_data_within_last_three_months = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test9", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_verify_data_within_last_three_months", False, "Functional")
+            print("test_verify_data_within_last_three_months = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test9", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_verify_data_within_last_three_months", False, "Functional")
+        print("test_verify_data_within_last_three_months = Failed")
     assert passed
 
 @pytest.mark.order(10)
@@ -265,16 +265,16 @@ def test_verify_export_user_collection_report(setup_driver):
         isTestVerified = verify_if_records_are_present(driver)
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test10", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_verify_export_user_collection_report", True, "Functional")
+            print("test_verify_export_user_collection_report = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test10", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_verify_export_user_collection_report", False, "Functional")
+            print("test_verify_export_user_collection_report = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test10", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_verify_export_user_collection_report", False, "Functional")
+        print("test_verify_export_user_collection_report = Failed")
     assert passed
 
 @pytest.mark.order(11)
@@ -288,16 +288,16 @@ def test_creating_consumption_section(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/WardSupply/Inventory/Consumption/ConsumptionList")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test11", True, "HealthApp")
+            test_obj.yakshaAssert("test_creating_consumption_section", True, "Functional")
             print("TestValidLogin = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test11", False, "HealthApp")
+            test_obj.yakshaAssert("test_creating_consumption_section", False, "Functional")
             print("TestValidLogin = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test11", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_creating_consumption_section", False, "Functional")
+        print("test_creating_consumption_section = Failed")
     assert passed
 
 @pytest.mark.order(12)
@@ -311,16 +311,16 @@ def test_creating_report_section(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/WardSupply/Inventory/Reports/ConsumptionReport")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test12", True, "HealthApp")
+            test_obj.yakshaAssert("test_creating_report_section", True, "Functional")
             print("TestValidLogin = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test12", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_creating_report_section", False, "Functional")
+            print("test_creating_report_section = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test12", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_creating_report_section", False, "Functional")
+        print("test_creating_report_section = Failed")
     assert passed
 
 @pytest.mark.order(13)
@@ -334,16 +334,16 @@ def test_verify_presence_of_supplier_name(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/Pharmacy/Order/GoodsReceiptList")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test13", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_verify_presence_of_supplier_name", True, "Functional")
+            print("test_verify_presence_of_supplier_name = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test13", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_verify_presence_of_supplier_name", False, "Functional")
+            print("test_verify_presence_of_supplier_name = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test13", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_verify_presence_of_supplier_name", False, "Functional")
+        print("test_verify_presence_of_supplier_name = Failed")
     assert passed
 
 @pytest.mark.order(14)
@@ -357,16 +357,16 @@ def test_filter_list_requests_by_date_and_type(setup_driver):
         isTestVerified = verify_user_is_on_correct_url(driver,"/Radiology/ImagingRequisitionList")
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test14", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_filter_list_requests_by_date_and_type", True, "Functional")
+            print("test_filter_list_requests_by_date_and_type = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test14", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("Test14", False, "Functional")
+            print("test_filter_list_requests_by_date_and_type = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test14", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_filter_list_requests_by_date_and_type", False, "Functional")
+        print("test_filter_list_requests_by_date_and_type = Failed")
     assert passed
 
 @pytest.mark.order(15)
@@ -380,16 +380,16 @@ def test_perform_login_with_invalid_credentials(setup_driver):
         isTestVerified = verify_user_is_not_logged_in(driver)
         if (testResult==True and isTestVerified==True):
             passed = True
-            test_obj.yakshaAssert("Test15", True, "HealthApp")
-            print("TestValidLogin = Passed")
+            test_obj.yakshaAssert("test_perform_login_with_invalid_credentials", True, "Functional")
+            print("test_perform_login_with_invalid_credentials = Passed")
         else:
             passed = False
-            test_obj.yakshaAssert("Test15", False, "HealthApp")
-            print("TestValidLogin = Failed")
+            test_obj.yakshaAssert("test_perform_login_with_invalid_credentials", False, "Functional")
+            print("test_perform_login_with_invalid_credentials = Failed")
     except:
         passed = False
-        test_obj.yakshaAssert("Test15", False, "HealthApp")
-        print("TestValidLogin = Failed")
+        test_obj.yakshaAssert("test_perform_login_with_invalid_credentials", False, "Functional")
+        print("test_perform_login_with_invalid_credentials = Failed")
     assert passed
 
 
