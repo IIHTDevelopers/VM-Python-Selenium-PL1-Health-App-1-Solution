@@ -289,11 +289,11 @@ def test_creating_consumption_section(setup_driver):
         if (testResult==True and isTestVerified==True):
             passed = True
             test_obj.yakshaAssert("test_creating_consumption_section", True, "Functional")
-            print("TestValidLogin = Passed")
+            print("test_creating_consumption_section = Passed")
         else:
             passed = False
             test_obj.yakshaAssert("test_creating_consumption_section", False, "Functional")
-            print("TestValidLogin = Failed")
+            print("test_creating_consumption_section = Failed")
     except:
         passed = False
         test_obj.yakshaAssert("test_creating_consumption_section", False, "Functional")
@@ -312,7 +312,7 @@ def test_creating_report_section(setup_driver):
         if (testResult==True and isTestVerified==True):
             passed = True
             test_obj.yakshaAssert("test_creating_report_section", True, "Functional")
-            print("TestValidLogin = Passed")
+            print("test_creating_report_sectio = Passed")
         else:
             passed = False
             test_obj.yakshaAssert("test_creating_report_section", False, "Functional")
